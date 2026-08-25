@@ -2,7 +2,7 @@ const form = document.querySelector("#formEscuela");
 const errores = document.querySelector("#errores");
 const exito = document.querySelector("#exito");
 
-// Función para cargar alumnos del servidor
+
 function cargarAlumnos() {
   fetch("/alumnos")
     .then(async res => {
@@ -25,12 +25,10 @@ function cargarAlumnos() {
     });
 }
 
-// Cargar alumnos cuando la página carga
 document.addEventListener("DOMContentLoaded", () => {
   cargarAlumnos();
 });
 
-// Evento del formulario
 form.addEventListener("submit", (event) => {
   event.preventDefault(); 
   errores.textContent = "";

@@ -1,0 +1,4 @@
+servidor/node_modules
+servidor/dist
+servidor/.env
+**/.git
